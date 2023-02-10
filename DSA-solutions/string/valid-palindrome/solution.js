@@ -1,8 +1,13 @@
-function isNonAlphaNum(c): boolean{
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+
+function isNonAlphaNum(c){
     let str = "!@#&()–[{}]:;',.?/*`~$^+=<>“-_\" ";
     return str.includes(c);
 }
-function isPalindrome(s: string): boolean {
+function isPalindrome(s){
     let newString = "";
     for(let i=0;i<s.length;i++)
         if(!isNonAlphaNum(s[i]))
